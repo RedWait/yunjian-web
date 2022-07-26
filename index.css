@@ -1,0 +1,113 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(186, 19, 19);
+}
+
+/* 导航栏 s */
+.navBar {
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.navBar .logo {
+  width: 16%;
+  line-height: 6vh;
+  color: rgb(186, 19, 19);
+  font-weight: bolder;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.navBar .menu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 6vh;
+}
+
+.menu .menuItem {
+  font-size: 0.92vw;
+  color: rgb(186, 19, 19);
+  cursor: pointer;
+}
+
+.menu .menuItem:hover {
+  font-weight: bold;
+}
+/* 导航栏 e */
+
+/* 轮播图 s */
+.swiper .swiperItem {
+  margin: 5.6vh auto 0;
+  width: 95vw;
+  height: 30vw;
+  animation: test 5s infinite;
+  background-image: url('./imgs/swiper111.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@keyframes test {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  33% {
+    left: 0;
+    top: 0;
+    background-image: url('./imgs/swiper222.png');
+  }
+  66% {
+    left: 0;
+    top: 0;
+    background-image: url('./imgs/swiper333.png');
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+  .swiper,
+  .swiper .swiperItem {
+    height: 90px;
+  }
+
+  .navBar .logo {
+    font-size: 0.5rem;
+  }
+
+  .menu .menuItem {
+    font-size: 10px;
+  }
+} */
+
+/* 轮播图 e */
+
+/* 展示图 s */
+.showPic {
+  width: 95vw;
+  margin: 0.6vw auto;
+}
+
+.showPic .picItem {
+  width: 95vw;
+  margin: 0.6vw auto;
+}
+/* 展示图 e */
