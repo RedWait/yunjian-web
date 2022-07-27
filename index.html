@@ -12,37 +12,100 @@
     <div class="navBar">
         <div class="logo">米合MIHE</div>
         <div class="menu">
-            <div class="menuItem"><a href="#tab0">首页</a></div>
-            <div class="menuItem"><a href="#tab1">平台服务</a></div>
-            <div class="menuItem"><a href="#tab2">平台介绍</a></div>
-            <div class="menuItem"><a href="#tab3">公司介绍</a></div>
-            <div class="menuItem"><a href="#tab4">商务合作</a></div>
-            <div class="menuItem"><a href="#tab5">更多>></a></div>
+            <div class="menuItem" id="btn0">首页</div>
+            <div class="menuItem" id="btn1">平台服务</div>
+            <!-- <div class="menuItem"><a href="#tab2">平台介绍</a></div> -->
+            <div class="menuItem" id="btn2">公司介绍</div>
+            <div class="menuItem"><a href="">商务合作</a></div>
+            <!-- <div class="menuItem"><a href="#tab5">更多>></a></div> -->
         </div>    
     </div>
-    <div class="swiper" id="tab0">
-        <div class="swiperItem"></div>
-    </div>
-    <div class="showPic">
-        <div class="picItem">
-            <img src="./imgs/111.png" width="100%" height="100%"></img>
+    <div class="item" id="tab0">
+        <!-- 首页 -->
+        <div class="swiper">
+            <div class="swiperItem"></div>
         </div>
-        <div class="picItem" id="tab1">
-            <img src="./imgs/222.png" width="100%" height="100%"></img>
-        </div>
-        <div class="picItem" id="tab2">
-            <img src="./imgs/333.png" width="100%" height="100%"></img>
-        </div>
-        <div class="picItem" id="tab3">
-            <img src="./imgs/444.png" width="100%" height="100%"></img>
-        </div>
-        <div class="picItem" id="tab4">
-            <img src="./imgs/555.png" width="100%" height="100%"></img>
-        </div>
-        <div class="picItem" id="tab5">
-            <img src="./imgs/666.png" width="100%" height="100%"></img>
+        <div class="showPic">
+            <div class="picItem">
+                <img src="./imgs/111.png" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/333.png" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/666.png" width="100%" height="100%"></img>
+            </div>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <div class="item" id="tab1">
+        <!-- 平台服务 -->
+        <div class="showPic">
+            <div class="picItem">
+                <img src="./imgs/service111.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/service222.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/service333.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/service444.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/service555.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/service666.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/service777.jpg" width="100%" height="100%"></img>
+            </div>
+        </div>
+    </div>
+    <div class="item" id="tab2">
+        <!-- 公司介绍 -->
+        <div class="showPic">
+            <div class="picItem">
+                <img src="./imgs/intro111.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/intro222.jpg" width="100%" height="100%"></img>
+            </div>
+            <div class="picItem">
+                <img src="./imgs/intro333.jpg" width="100%" height="100%"></img>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var tab0 = document.getElementById('tab0');
+        var tab1 = document.getElementById('tab1');
+        var tab2 = document.getElementById('tab2');
+        var btn0 = document.getElementById('btn0');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+
+        btn0.onclick = function(){
+            tab0.style.display = "block";
+            tab1.style.display = "none";
+            tab2.style.display = "none";
+            window.scrollTo(0, 0); 
+        }
+        btn1.onclick = () => {
+            tab0.style.display = "none";
+            tab1.style.display = "block";
+            tab2.style.display = "none";
+            window.scrollTo(0, 0); 
+        }
+        btn2.onclick = () => {
+            tab0.style.display = "none";
+            tab1.style.display = "none";
+            tab2.style.display = "block";
+            window.scrollTo(0, 0); 
+        }
+
+
+    </script>
 </body>
 </html>

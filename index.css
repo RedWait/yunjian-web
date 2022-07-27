@@ -13,7 +13,7 @@ a {
 /* 导航栏 s */
 .navBar {
   width: 100vw;
-  height: 6vh;
+  height: 5vw;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -25,7 +25,7 @@ a {
 
 .navBar .logo {
   width: 16%;
-  line-height: 6vh;
+  line-height: 5vw;
   color: rgb(186, 19, 19);
   font-weight: bolder;
   font-size: 2vw;
@@ -37,7 +37,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  line-height: 6vh;
+  line-height: 5vw;
 }
 
 .menu .menuItem {
@@ -55,10 +55,10 @@ a {
 .swiper .swiperItem {
   margin: 5.6vh auto 0;
   width: 95vw;
-  height: 30vw;
-  animation: test 5s infinite;
+  height: 42vw;
+  animation: test 6s infinite;
   background-image: url('./imgs/swiper111.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -111,3 +111,7 @@ a {
   margin: 0.6vw auto;
 }
 /* 展示图 e */
+
+.item {
+  margin-top: 4vw;
+}
